@@ -45,9 +45,9 @@ export function ColorPalette() {
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {/* Header */}
-        <div className="mb-12 flex items-start justify-between flex-wrap gap-6">
-          <div>
-            <div className="flex items-center gap-3 mb-3">
+        <div className="mb-12 flex flex-col items-center justify-center flex-wrap gap-6">
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-3">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 shadow-lg shadow-violet-500/30 flex items-center justify-center text-lg">
                 🎨
               </div>
@@ -62,7 +62,7 @@ export function ColorPalette() {
                 from any image.
               </span>
             </h1>
-            <p className="mt-3 text-[--text-muted] text-base max-w-md leading-relaxed">
+            <p className="mt-3 text-[--text-muted] text-base mx-auto max-w-md leading-relaxed">
               Drop an image and instantly get dominant colours with one-click copy for HEX,
               RGB, HSL, or Tailwind. Zero external APIs.
             </p>
