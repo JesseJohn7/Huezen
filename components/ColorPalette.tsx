@@ -165,7 +165,7 @@ export function ColorPalette() {
                 Built With CanvasAPI · ZeroTracking · ZeroAds · 100% Offline
               </p>
               <div className="flex items-center gap-4 mt-1">
-                <span className="text-[--text-muted] text-xs">© 2026 Huezen</span>
+                <span className="text-[--text-muted] text-xs">© 2026</span>
               </div>
             </div>
           </div>
