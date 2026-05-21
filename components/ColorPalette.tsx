@@ -33,7 +33,7 @@ export function ColorPalette() {
         } as React.CSSProperties
       }
     >
-      {/* Background gradient */}
+      {/* Background grid */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.03]"
         style={{
@@ -46,9 +46,12 @@ export function ColorPalette() {
       {/* Navigation — no border */}
       <nav className="fixed top-0 w-full z-50 bg-[--bg]/95 backdrop-blur">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+          {/* Logo — always visible */}
           <div className="flex items-center gap-2">
-            
-            <span className="text-lg font-bold hidden sm:inline">Huezen</span>
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-sm flex-shrink-0">
+              🎨
+            </div>
+            <span className="text-base font-bold tracking-tight">Huezen</span>
           </div>
 
           {/* GitHub Star Button */}
@@ -56,12 +59,13 @@ export function ColorPalette() {
             href="https://github.com/JesseJohn7/Huezen"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-[--surface-alt] hover:bg-[--surface-hover] rounded-lg text-sm font-semibold transition cursor-pointer hover:scale-105 hover:shadow-lg"
+            className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-[--surface-alt] hover:bg-[--surface-hover] rounded-lg text-xs sm:text-sm font-semibold transition cursor-pointer hover:scale-105 hover:shadow-lg"
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.002 12.002 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
-            Star on GitHub
+            <span className="hidden xs:inline sm:inline">Star on GitHub</span>
+            <span className="xs:hidden sm:hidden">Star</span>
           </a>
         </div>
       </nav>
@@ -110,7 +114,7 @@ export function ColorPalette() {
                       {colors.length} colours extracted · click any format to copy
                     </p>
                   </div>
-                  {/* Thin colour bar preview */}
+                  {/* Colour bar preview */}
                   <div className="w-full sm:w-auto h-10 rounded-xl overflow-hidden shadow-lg flex">
                     {colors.map((c) => (
                       <div
@@ -131,7 +135,7 @@ export function ColorPalette() {
                 </div>
               </div>
 
-              {/* Actions — no divider */}
+              {/* Actions */}
               <div>
                 <p className="text-xs font-mono uppercase tracking-widest text-[--text-muted] mb-6">
                   Export options
@@ -141,19 +145,44 @@ export function ColorPalette() {
             </div>
           )}
 
-          {/* Empty state hint */}
+          {/* Empty state */}
           {colors.length === 0 && !isLoading && (
             <div className="text-center text-[--text-muted] text-sm mt-8 space-y-3 max-w-4xl mx-auto px-4">
               <p className="text-base">Upload an image or paste one to get started</p>
-              <p className="text-xs">You can also press <kbd className="px-2 py-1 rounded bg-[--surface-alt] text-[--text-primary] font-mono inline">⌘V</kbd> / <kbd className="px-2 py-1 rounded bg-[--surface-alt] text-[--text-primary] font-mono inline">Ctrl+V</kbd></p>
+              <p className="text-xs">
+                You can also press{" "}
+                <kbd className="px-2 py-1 rounded bg-[--surface-alt] text-[--text-primary] font-mono inline">⌘V</kbd>
+                {" / "}
+                <kbd className="px-2 py-1 rounded bg-[--surface-alt] text-[--text-primary] font-mono inline">Ctrl+V</kbd>
+              </p>
             </div>
           )}
 
-          {/* Footer — no top border */}
+          {/* Footer */}
           <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-12">
-            <p className="text-center text-[--text-muted] text-xs font-mono">
-              built with canvas api · zero tracking · zero ads · 100% offline
-            </p>
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-md bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-xs">
+                  🎨
+                </div>
+                <span className="text-[--text-primary] text-sm font-semibold">Huezen</span>
+              </div>
+              <p className="text-[--text-muted] text-xs font-mono text-center">
+                BuiltWith CanvasAPI · ZeroTracking · ZeroAds · 100% Offline
+              </p>
+              <div className="flex items-center gap-4 mt-1">
+                <a
+                  href="https://github.com/JesseJohn7/Huezen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[--text-muted] hover:text-[--text-primary] text-xs transition"
+                >
+                  GitHub
+                </a>
+                <span className="text-[--border]">·</span>
+                <span className="text-[--text-muted] text-xs">© 2025 Huezen</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
