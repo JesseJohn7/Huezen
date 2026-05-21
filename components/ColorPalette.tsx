@@ -174,7 +174,7 @@ export function ColorPalette() {
                   GitHub
                 </a>
                 <span className="text-[--border]">·</span>
-                <span className="text-[--text-muted] text-xs">© 2025 Huezen</span>
+                <span className="text-[--text-muted] text-xs">© 2026 Huezen</span>
               </div>
             </div>
           </div>
