@@ -162,7 +162,7 @@ export function ColorPalette() {
                 <span className="text-[--text-primary] text-sm font-semibold">Huezen</span>
               </div>
               <p className="text-[--text-muted] text-xs font-mono text-center">
-                BuiltWith CanvasAPI · ZeroTracking · ZeroAds · 100% Offline
+                Built With CanvasAPI · ZeroTracking · ZeroAds · 100% Offline
               </p>
               <div className="flex items-center gap-4 mt-1">
                 <a
