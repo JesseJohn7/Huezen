@@ -165,15 +165,6 @@ export function ColorPalette() {
                 Built With CanvasAPI · ZeroTracking · ZeroAds · 100% Offline
               </p>
               <div className="flex items-center gap-4 mt-1">
-                <a
-                  href="https://github.com/JesseJohn7/Huezen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[--text-muted] hover:text-[--text-primary] text-xs transition"
-                >
-                  GitHub
-                </a>
-                <span className="text-[--border]">·</span>
                 <span className="text-[--text-muted] text-xs">© 2026 Huezen</span>
               </div>
             </div>
