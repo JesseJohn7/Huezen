@@ -48,9 +48,6 @@ export function ColorPalette() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           {/* Logo — always visible */}
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-sm flex-shrink-0">
-              🎨
-            </div>
             <span className="text-base font-bold tracking-tight">Huezen</span>
           </div>
 
@@ -162,9 +159,6 @@ export function ColorPalette() {
           <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-12">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-md bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-xs">
-                  🎨
-                </div>
                 <span className="text-[--text-primary] text-sm font-semibold">Huezen</span>
               </div>
               <p className="text-[--text-muted] text-xs font-mono text-center">
