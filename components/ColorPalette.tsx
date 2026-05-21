@@ -48,7 +48,7 @@ export function ColorPalette() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             
-            <span className="text-sm font-semibold hidden sm:inline">Huezen</span>
+            <span className="text-sm font-bold hidden sm:inline">Huezen</span>
           </div>
 
           {/* GitHub Star Button */}
