@@ -102,7 +102,7 @@ export default function ImageDropzone({
         className={`
           group relative flex flex-col items-center justify-center
           rounded-2xl border-2 border-dashed transition-all duration-300
-          cursor-pointer outline-none min-h-[280px]
+          cursor-pointer outline-none min-h-[240px] sm:min-h-[320px]
           ${isDragging
             ? "border-[--accent] bg-[--accent]/5 scale-[1.01]"
             : "border-[--border] hover:border-[--accent]/60 hover:bg-[--surface-hover]"
