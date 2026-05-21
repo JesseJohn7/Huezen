@@ -47,9 +47,7 @@ export function ColorPalette() {
       <nav className="fixed top-0 w-full z-50 bg-[--bg]/95 backdrop-blur">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-lg">
-              🎨
-            </div>
+            
             <span className="text-sm font-semibold hidden sm:inline">ColorPalette</span>
           </div>
 
