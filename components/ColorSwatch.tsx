@@ -69,17 +69,17 @@ export default function ColorSwatch({ color, index }: ColorSwatchProps) {
       </div>
 
       {/* Copy buttons */}
-      <div className="grid grid-cols-4 bg-[--surface] border-t border-[--border]">
+      <div className="grid grid-cols-4 gap-2 bg-gradient-to-b from-[--surface]/50 to-[--surface] p-3">
         {FORMATS.map(({ key, label }) => (
           <button
             key={key}
             onClick={() => handleCopy(key)}
             className={`
-              py-2.5 text-xs font-mono font-semibold transition-all duration-150
-              border-r border-[--border] last:border-r-0
+              py-3 px-2 text-xs font-mono font-semibold transition-all duration-200 rounded-lg cursor-pointer
+              transform hover:scale-105
               ${copied === key
-                ? "bg-[--accent] text-white"
-                : "text-[--text-muted] hover:bg-[--surface-hover] hover:text-[--text-primary]"
+                ? "bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-lg shadow-emerald-500/30"
+                : "bg-[--surface-hover] text-[--text-muted] hover:bg-[--accent]/20 hover:text-[--accent] hover:shadow-lg hover:shadow-[--accent]/20"
               }
             `}
           >
