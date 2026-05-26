@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Huezen
 
-## Getting Started
+![Stars](https://img.shields.io/github/stars/JesseJohn7/Huezen) ![Forks](https://img.shields.io/github/forks/JesseJohn7/Huezen) ![License](https://img.shields.io/badge/license-Not%20specified-lightgrey)
 
-First, run the development server:
+Huezen is a web application that allows users to extract dominant colors from any image with ease. It offers features to copy color values in different formats such as HEX, RGB, HSL, or Tailwind CSS directly from the interface. The application operates completely offline without relying on external APIs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- Extract and display dominant colors from uploaded images.
+- One-click functionality for copying colors in various formats: HEX, RGB, HSL, and Tailwind.
+- Zero external dependencies, ensuring a reliable and fast user experience.
+
+## Tech Stack
+- **Frontend**: React, TypeScript
+- **CSS**: Tailwind CSS
+- **Framework**: Next.js
+- **Build Tools**: PostCSS, ESLint
+
+## Installation
+
+To run the Huezen application locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JesseJohn7/Huezen.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Huezen
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+Once the app is running, you can upload an image using the interface. The app will analyze the image and display the dominant colors. You can easily copy the color values in your preferred format by clicking the corresponding buttons.
+
+```tsx
+// Example usage in a React component
+import { ColorPalette } from "../components/ColorPalette";
+
+function MyApp() {
+  return <ColorPalette />;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Link
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit the live application at [Huezen](https://huezen.vercel.app).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+If you would like to contribute to Huezen, feel free to submit a pull request or open an issue to discuss improvements.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is not licensed under any specific License. Please check the repository for more information.
